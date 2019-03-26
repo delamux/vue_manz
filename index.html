@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Curso Vue @Manz</title>
-    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script defer src="app.js"></script>
 </head>
-<body>
 
+<body>
+    <div id="app">
+        <div>{{title}}</div>
+        <div v-if="slogan"> YEAHHH!</div>
+        <ol>
+            <li v-for="user in users">{{user.name}}</li>
+        </ol>
+        <div>{{number}}</div>
+        <button @click="add">suma uno</button>
+    </div>
 </body>
+
 </html>
