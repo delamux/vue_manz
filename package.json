@@ -1,0 +1,19 @@
+{
+  "name": "vue-sample",
+  "version": "1.0.0",
+  "description": "curso vue de manz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delamux/vue_manz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delamux/vue_manz/issues"
+  },
+  "homepage": "https://github.com/delamux/vue_manz#readme"
+}
