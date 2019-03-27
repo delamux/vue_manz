@@ -20,6 +20,9 @@ const app = new Vue({
     methods: {
         add() {
             this.number++
-        }
+        },
+        less() {
+            this.number--
+        },
     }
 });
