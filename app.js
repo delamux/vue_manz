@@ -18,10 +18,13 @@ const clockComponent = {
     },
     methods: {
         tick() {
-            this.hours = new Date().getHours().toString().padStart(2, '0');
-            this.min = new Date().getMinutes().toString().padStart(2, '0');
-            this.sec = new Date().getSeconds().toString().padStart(2, '0');
+            this.hours = new Date().getHours();
+            this.min = new Date().getMinutes();
+            this.sec = new Date().getSeconds();
         }
+    },
+    filters: {
+        toHuman: d => d.toString().padStart(2, '0')
     }
 }
 Vue.component('html-clock', clockComponent);
